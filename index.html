@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+   <script src="https://kit.fontawesome.com/1e3583843c.js" crossorigin="anonymous"></script>
+    <link rel="Stylesheet" href="style.css">
+    <title>PassWord Generator</title>
+</head>
+<body>
+    <!---Copy Popup-->
+    <div class="popup-screen">
+        <div class="popup">
+            <h2>Thank You</h2>
+            <p>Your Password copied!</p>
+                    <br>
+            <img class="done" src="done.png">
+            <button class="btn1" id="closebtn">OK</button>
+        </div>
+    </div>
+    <!--end copy popup-->
+
+    <!--Start generate popup-->
+   <!---- <div class="popup-screen1">
+        <div class="popup1">
+            <h2>PLEASE</h2>
+                <br>
+            <img class="done1" src="please.png">
+            <p>At First Generate your PassWord</p>
+            <button class="btn3" id="closebtn2">OK</button>
+        </div>
+    </div>
+    end generate popup-->
+
+    
+<div class="main-container">
+    <div class="container">
+        <h2>Generate Your PassWord</h2>
+      <div class="result-container">
+        <textarea id="PasswordResult"></textarea>
+       </div>
+      <div class="settings">
+        <div class="setting">
+            <lebel>Password length</lebel>
+            <input type="number" id="Passwordlength" min="4" max="20" value="8" />
+       </div>
+        <div class="settings">
+            <div class="setting">
+                <lebel>Include Uppercase Letters</lebel>
+                <input type="checkbox" id="uppercase"  chacked />
+            </div>
+            <div class="settings">
+                <div class="setting">
+                    <lebel>Include Lowercase Letters</lebel>
+                    <input type="checkbox" id="lowercase"  chacked />
+                </div>
+                <div class="settings">
+                    <div class="setting">
+                        <lebel>Include Numbers</lebel>
+                        <input type="checkbox" id="numbers"  chacked />
+                </div>
+                <div class="settings">
+                    <div class="setting">
+                        <lebel>Include Symbols</lebel>
+                        <input type="checkbox" id="symbols"  chacked />
+                </div>
+    </div>
+    <div class="buttons">
+        <button class="btn btn-large" id="generateBtn">
+            <i class=" fas fa-key"></i>Generate
+        </button>
+        <button class="btn" id="clipboardBtn">
+           <i class="fas fa-clipboard"></i>Copy 
+        </button>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>   
+</body>
+</html>

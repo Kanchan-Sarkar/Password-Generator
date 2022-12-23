@@ -1,0 +1,235 @@
+/*Card and textarea*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Indie+Flower&family=Jost:wght@300;500;700&family=Montaga&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,500&family=Roboto:ital,wght@0,100;0,900;1,100;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Herr+Von+Muellerhoff&family=Indie+Flower&family=Jost:wght@300;500;700&family=Leckerli+One&family=Montaga&family=Niconne&family=Open+Sans:wght@600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,500&family=Roboto:ital,wght@0,100;0,900;1,100;1,900&family=Sacramento&family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: #371B58;
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.main-container{
+    /*height: 450px;*/
+    max-width: 350px;
+    width:90%;
+ 
+}
+
+.container{
+    height: 100%;
+    width:100%;
+    background: #4C3575;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 25px 0;
+   
+}
+h2{
+    padding-left: 20px;
+    color: aliceblue;
+}
+/*----- Start of copy popup Screen --*/
+.popup-screen{
+    z-index: 999999;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.popup-screen.active{
+    visibility: visible;
+}
+
+.popup{
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(100px);
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 50px 50px;
+    border-radius: 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.popup h2{
+    padding: 2.1rem;
+    color:#100F0F;
+}
+.popup p{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+.popup .btn1{
+    margin: 10px 10px;
+    padding: 10px 30px;
+    background: #f9004d;
+    border-radius: 20px;
+    box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: white;
+}
+.popup .btn1:hover{
+    color: whitesmoke;
+    background: #100f00;
+    border:  #f9004d 2px solid;
+}
+.popup .done{
+    height: 40%;
+    width: 40%;
+}
+
+/*---------End of copy popup Screen----*/
+/*----- Start of Genarate Password popup Screen --*/
+.popup-screen1{
+    z-index: 999999;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.popup-screen1.active{
+    visibility: visible;
+}
+
+.popup1{
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(100px);
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 50px 50px;
+    border-radius: 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.popup1 h2{
+    padding: 2.5rem;
+    color:#100F0F;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.popup1 p{
+    font-size: 0.95rrem;
+    margin-bottom: 10px;
+}
+.popup1 .btn3{
+    margin: 10px 10px;
+    padding: 10px 30px;
+    background: #f9004d;
+    border-radius: 20px;
+    box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: white;
+}
+.popup1 .btn3:hover{
+    color: whitesmoke;
+    background: #100f00;
+    border:  #f9004d 2px solid;
+}
+.popup1 .done1{
+    height: 40%;
+    width: 40%;
+    padding-bottom: 20px;
+}
+/*-------End Generate Popup-----*/
+textarea{
+    background-color: #5B4B8A ;
+    border: none;
+    border-radius: 8px;
+    color:aliceblue;
+    font-size: 25px;
+    margin: 25px 25px 15px 25px ;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    outline: none;
+    resize: none;
+    padding-left: 6px;
+    
+}
+.setting{
+    margin: 10px 20px 1px 20px;
+    padding: 8px 9px ;
+
+}
+#Passwordlength{
+    padding: 4px;
+    margin-left: 65px;
+    background-color: #5B4B8A;
+}
+#uppercase{
+    margin-left:30px;
+    background-color: #5B4B8A;
+    
+}
+#lowercase{
+    margin-left: 31px;
+    background-color: #5B4B8A;
+}
+#numbers{
+    margin-left:100px;
+    background-color: #5B4B8A;
+}
+#symbols{
+    margin-left: 105px;
+    background-color: #5B4B8A;
+}
+/*.result-container .btn {
+    font-size: 20px;
+    position:absolute;
+    top: 5px;
+    right: 5px;
+    height: 40px;
+    width: 40px;
+}*/
+ .buttons{
+    display: flex;
+    /*background-color: #570A57;*/
+ }
+
+ .btn{
+    width: 50%;
+    border: none;
+    color: orange;
+    background-color: #570A57;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 9px;
+    margin: 15px 10px 10px 14px;
+    /*background-color: var(--bg-color);
+    filter: var(--filter2);*/
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+ }
+ 
+ @media (max-width: 600px) {
+    
+    .container{
+        height: 100%;
+        width:100%;
+        background: #4C3575;
+        border-radius: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        padding: 25px 0;
+    }    
+       
+}
